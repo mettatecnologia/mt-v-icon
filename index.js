@@ -1,1 +1,1 @@
-Vue.component('jb-v-icon', require('./JbIcon.vue').default);
+Vue.component('jb-icon', require('./JbIcon.vue').default);
