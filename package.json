@@ -1,6 +1,6 @@
 {
-  "name": "jb-v-icon",
-  "version": "1.0.0",
+  "name": "@metta/mt-v-icon",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jbmchd/jb-v-icon.git"
+    "url": "git+https://github.com/mettatecnologia/mt-v-icon.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jbmchd/jb-v-icon/issues"
+    "url": "https://github.com/mettatecnologia/mt-v-icon/issues"
   },
-  "homepage": "https://github.com/jbmchd/jb-v-icon#readme"
+  "homepage": "https://github.com/mettatecnologia/mt-v-icon#readme"
 }
