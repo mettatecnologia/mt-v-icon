@@ -1,5 +1,5 @@
 <template>
-    <v-btn fab depressed small :href="href" color="white">
+    <v-btn fab depressed x-small :href="href" color="white">
         <v-icon color="primary" >arrow_back</v-icon>
     </v-btn>
 </template>
