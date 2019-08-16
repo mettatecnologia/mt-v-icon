@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <v-btn icon small :href="href" color="white">
-            <v-icon dark color="primary" small>arrow_back</v-icon>
-        </v-btn>
-    </div>
+    <v-btn fab depressed small :href="href" color="white">
+        <v-icon color="primary" >arrow_back</v-icon>
+    </v-btn>
 </template>
 
 <script>
@@ -16,15 +14,6 @@
             return {
                 vmodel:this.value
             }
-        },
-        methods: {
-            voltar: function(){
-                if(!this.href){
-
-                }
-            }
-        },
-        watch: {
         },
     }
 </script>

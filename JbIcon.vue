@@ -1,14 +1,16 @@
 <template>
 
     <v-tooltip v-if="ttText" :bottom="ttBottom">
-        
-        <v-icon small :color="color" @click="$emit('click')" slot="activator"> <slot></slot> </v-icon>
-        <span>{{ttText}}</span>
+
+        <template v-slot:activator="{ on }">
+            <v-icon small :color="color" @click="$emit('click')" v-on="on"> <slot></slot> </v-icon>
+        </template>
+        <span style="font-size:small">{{ttText}}</span>
 
     </v-tooltip>
-    
-    
-    <v-icon v-else small :color="color" @click="$emit('click')" slot="activator"> <slot></slot> </v-icon>
+
+
+    <v-icon v-else small :color="color" @click="$emit('click')"> <slot></slot> </v-icon>
 
 </template>
 <script>
@@ -32,15 +34,15 @@ export default {
             if (this.$slots.default) {
                 return this.$slots.default[0].text.trim()
             }
-        }, 
+        },
         trabalhaIcone(){
             let icon = this.$el.tagName=="I" ? this.$el : this.$el.getElementsByTagName('i')
-            if(icon.hasOwnProperty('0')){
+            if({}.hasOwnProperty.call(icon,'0')){
                 icon = icon[0]
             }
-            
+
             if(typeof this.$listeners.click=='undefined'){
-                icon.classList.remove('v-icon--link')
+                // icon.classList.remove('v-icon--link')
             }
         }
     },
